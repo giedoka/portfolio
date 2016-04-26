@@ -1,0 +1,295 @@
+html {
+  font-size: 62.5%;
+  width: 100%;
+  height: 100%; }
+  html body {
+    margin: 0 auto;
+    background: #ffffff;
+    font-family: 'Catamaran', sans-serif;
+    height: 100%; }
+    html body .container {
+      margin: 30px 50px 0 50px; }
+      @media (min-width: 450px) {
+        html body .container {
+          margin-top: 50px; } }
+    html body header {
+      height: 100%; }
+      html body header .header-img {
+        height: 600px;
+        background: url("../img/cans.jpg") no-repeat;
+        background-size: cover;
+        position: relative; }
+        html body header .header-img::after {
+          content: "";
+          height: 100%;
+          width: 100%;
+          position: absolute;
+          top: 0;
+          left: 0;
+          background: rgba(22, 229, 238, 0.6);
+          box-shadow: inset 0 300px 300px -500px #ffffff, inset 0 -300px 300px -150px #ffffff; }
+      html body header .title {
+        color: #ffffff;
+        position: absolute;
+        width: 100%;
+        top: 200px;
+        text-align: center;
+        font-weight: 100; }
+        html body header .title h1 {
+          font-weight: 100;
+          font-size: 6.5rem;
+          line-height: 1;
+          margin: 0; }
+        html body header .title p {
+          font-weight: 100;
+          font-size: 3.5rem;
+          margin: 0; }
+        html body header .title .more-btn {
+          font-size: 2rem;
+          margin-top: 50px; }
+          html body header .title .more-btn a {
+            padding: 5px 25px;
+            display: inline;
+            text-decoration: none;
+            background: #ffffff;
+            color: #40E0D0;
+            border: 2px solid #ffffff;
+            border-radius: 30px; }
+            html body header .title .more-btn a:hover {
+              background: none;
+              color: #ffffff; }
+      html body header nav {
+        position: absolute;
+        z-index: 999;
+        right: 0;
+        top: 0;
+        font-size: 1.5rem;
+        color: #ffffff;
+        font-weight: 100; }
+        html body header nav .icon-menu {
+          margin-right: 5px;
+          margin-top: 5px;
+          padding: 5px 7px;
+          display: block;
+          border: 2px solid #ffffff;
+          border-radius: 100%; }
+          html body header nav .icon-menu:hover {
+            background: #ffffff;
+            color: #40E0D0; }
+          @media (min-width: 600px) {
+            html body header nav .icon-menu {
+              display: none; } }
+        html body header nav ul {
+          list-style-type: none;
+          margin-right: 15px;
+          margin-top: 25px;
+          display: none; }
+          @media (min-width: 600px) {
+            html body header nav ul {
+              display: block; } }
+          html body header nav ul li {
+            display: inline;
+            margin-right: 15px; }
+            html body header nav ul li a {
+              color: #ffffff;
+              text-decoration: none;
+              padding: 5px 25px;
+              border: 2px solid #ffffff;
+              border-radius: 30px; }
+              html body header nav ul li a:hover {
+                background: #ffffff;
+                color: #40E0D0; }
+    html body article {
+      height: 100%; }
+      html body article .container {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative; }
+        html body article .container #about-me {
+          position: absolute;
+          top: 0; }
+        html body article .container p {
+          text-align: center;
+          margin: 0 30px;
+          font-size: 1.3rem;
+          line-height: 1.5;
+          color: #2c9c91; }
+          @media (min-width: 450px) {
+            html body article .container p {
+              font-size: 2rem;
+              margin: 0 auto; } }
+          @media (min-width: 600px) {
+            html body article .container p {
+              width: 500px; } }
+      html body article #skills {
+        margin-top: 50px;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background: #40E0D0;
+        position: relative; }
+        @media (min-width: 800px) {
+          html body article #skills {
+            height: 650px;
+            overflow: hidden; } }
+        html body article #skills .skill-info {
+          width: 350px;
+          height: 350px;
+          border-radius: 100%;
+          border: 10px solid #2c9c91;
+          display: none;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          color: #ffffff;
+          text-align: center;
+          margin: auto;
+          /*p {
+              font-size: 2rem;
+              margin: 0 10px;
+              margin-top: 20px;
+          }*/ }
+          @media (min-width: 800px) {
+            html body article #skills .skill-info {
+              position: absolute;
+              left: 0;
+              right: 0;
+              top: 0;
+              bottom: 0; } }
+          html body article #skills .skill-info h1 {
+            font-size: 3.5rem;
+            margin: 0;
+            margin-top: 50px; }
+          html body article #skills .skill-info .star {
+            align-self: center; }
+        html body article #skills ul {
+          display: flex;
+          justify-content: space-around;
+          align-items: flex-start;
+          flex-flow: column nowrap;
+          margin: 0 5%;
+          padding: 0;
+          list-style-type: none;
+          height: 100%; }
+          @media (min-width: 800px) {
+            html body article #skills ul {
+              position: relative;
+              display: block;
+              margin: 0; } }
+          html body article #skills ul li {
+            width: 100px;
+            height: 100px;
+            border-radius: 100%;
+            border: 10px solid #2c9c91;
+            background: #ffffff; }
+            @media (min-width: 800px) {
+              html body article #skills ul li {
+                position: absolute; } }
+            @media (min-width: 400px) {
+              html body article #skills ul li {
+                width: 150px;
+                height: 150px; } }
+            @media (min-width: 800px) {
+              html body article #skills ul li .line {
+                width: 0;
+                position: absolute;
+                background: #40E0D0;
+                border-bottom: 3px solid #2c9c91; } }
+            html body article #skills ul li:first-child {
+              background: url("../img/html5.png") no-repeat;
+              background-size: 80%;
+              background-position: center;
+              top: -300px;
+              left: -300px; }
+              html body article #skills ul li:first-child .line {
+                left: 115px;
+                bottom: 0; }
+            html body article #skills ul li:nth-child(2) {
+              background: url("../img/css3.png") no-repeat;
+              background-size: 80%;
+              background-position: center;
+              top: -300px;
+              right: -300px; }
+              html body article #skills ul li:nth-child(2) .line {
+                right: 115px;
+                bottom: 0; }
+            html body article #skills ul li:nth-child(3) {
+              background: url("../img/js.png") no-repeat;
+              background-size: 80%;
+              background-position: center;
+              left: -300px;
+              bottom: -300px; }
+              html body article #skills ul li:nth-child(3) .line {
+                left: 115px;
+                top: 0; }
+            html body article #skills ul li:nth-child(4) {
+              background: url("../img/sass.png") no-repeat;
+              background-size: cover;
+              background-position: center;
+              right: -300px;
+              bottom: -300px; }
+              html body article #skills ul li:nth-child(4) .line {
+                right: 115px;
+                top: 0; }
+      html body article .container {
+        margin-left: 0;
+        margin-right: 0; }
+        html body article .container #projects h1 {
+          font-size: 4rem;
+          margin: 0; }
+        html body article .container #projects ul {
+          list-style-type: none;
+          padding: 0; }
+        html body article .container #projects .projects-list {
+          margin-top: 50px; }
+          @media (min-width: 600px) {
+            html body article .container #projects .projects-list {
+              display: flex;
+              flex-flow: column nowrap;
+              justify-content: space-around;
+              align-items: center; } }
+          html body article .container #projects .projects-list .project {
+            width: 300px;
+            height: 200px;
+            border: 3px solid rgba(22, 229, 238, 0.6);
+            position: relative;
+            overflow-x: auto;
+            margin-top: 20px; }
+            html body article .container #projects .projects-list .project:first-child .page-img-list {
+              width: 300%; }
+              html body article .container #projects .projects-list .project:first-child .page-img-list .page-img {
+                width: 33.333334%; }
+                html body article .container #projects .projects-list .project:first-child .page-img-list .page-img:first-child {
+                  background: url("../img/projects/kappe1.png") no-repeat;
+                  background-size: cover;
+                  background-position: 50%; }
+                html body article .container #projects .projects-list .project:first-child .page-img-list .page-img:nth-child(2) {
+                  background: url("../img/projects/kappe2.png") no-repeat;
+                  background-size: cover;
+                  background-position: 50%; }
+                html body article .container #projects .projects-list .project:first-child .page-img-list .page-img:nth-child(3) {
+                  background: url("../img/projects/kappe3.png") no-repeat;
+                  background-size: cover;
+                  background-position: 50%; }
+            html body article .container #projects .projects-list .project:nth-child(2) .page-img-list {
+              width: 200%; }
+              html body article .container #projects .projects-list .project:nth-child(2) .page-img-list .page-img {
+                width: 50%; }
+                html body article .container #projects .projects-list .project:nth-child(2) .page-img-list .page-img:first-child {
+                  background: url("../img/projects/system1.png") no-repeat;
+                  background-size: cover;
+                  background-position: 50%; }
+                html body article .container #projects .projects-list .project:nth-child(2) .page-img-list .page-img:nth-child(2) {
+                  background: url("../img/projects/system2.png") no-repeat;
+                  background-size: cover; }
+            html body article .container #projects .projects-list .project .page-img-list {
+              height: 100%;
+              position: absolute;
+              left: 0; }
+              html body article .container #projects .projects-list .project .page-img-list .page-img {
+                height: 100%;
+                float: left; }
+
+/*# sourceMappingURL=main.css.map */
